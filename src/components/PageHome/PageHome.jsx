@@ -22,17 +22,16 @@ export default function PageHome() {
     let [logoCircleDash, setlogoCircleDash] = useState("0 2000")
 
     useEffect(() => {
-        let i = 1138
-        setInterval(() => {
+        let i = 0
+        let intervalId = setInterval(() => {
             setlogoCircleDash(i + " 2000")
+            i++
 
             // Если полоска дошла до конца, то обнуляем
-            if (i === 1138) {
+            if (i >= 1140) {
                 i = 0
-                return
+                // clearInterval(intervalId)
             }
-
-            i++
         }, 10);
     }, [])
 

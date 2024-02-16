@@ -1,0 +1,37 @@
+/* Секция с информацией */
+.home-services {
+
+    margin-top: 160px;
+}
+
+.home-services h2 {
+    color: var(--text-black);
+    line-height: 39px;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+}
+
+.home-services table {
+    border-collapse: collapse;
+
+    margin-top: 20px;
+}
+
+.home-services th,
+.home-services td {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-black);
+    text-align: start;
+}
+
+.home-services th {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+}
+
+.home-services td {
+    line-height: 19px;
+    letter-spacing: 1.3px; 
+}

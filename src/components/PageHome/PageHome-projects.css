@@ -1,0 +1,97 @@
+/* Секция с информацией */
+.home-projects {
+
+    margin-top: 160px;
+}
+
+.home-projects h2 {
+    color: var(--text-gray);
+    line-height: 39px;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+
+    margin-top: 4px;
+}
+
+.home-projects h2 span {
+    position: relative;
+    color: var(--text-black);
+    line-height: inherit;
+    letter-spacing: inherit;
+
+    z-index: var(--z-main);
+}
+
+.home-projects h2 span::before {
+    content: "";
+    width: 197px;
+    height: 51px;
+
+    position: absolute;
+    top: -6px;
+    left: -13px;
+    z-index: var(--z-under);
+
+    border-radius: 40px;
+    background: rgba(55, 187, 255, 0.6);
+}
+
+
+/* Таблица */
+.home-projects table {
+    border-collapse: collapse;
+
+    margin-top: 58px;
+}
+
+.home-projects thead th {
+    color: var(--text-gray);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 1.8px;
+}
+
+.home-projects th,
+.home-projects td {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-black);
+    text-align: start;
+}
+
+.home-projects td p {
+    line-height: 21px;
+    letter-spacing: 1.3px;
+}
+
+
+/* Точки в начале строки в полсднем столбце */
+.home-projects td:nth-child(3) p {
+    padding-left: 23px;
+    position: relative;
+}
+
+.home-projects td:nth-child(3) p::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+
+    position: absolute;
+    top: 8px;
+    left: 8px;
+
+    background-color: black;
+    border-radius: 4px;
+}
+
+
+/* Иконка напротив заголовка "НДА" */
+#home-projects__container-nda-icon::after {
+    content: "";
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    top: 0;
+    left: 210px;
+    background-image: url("../../assets/icons/project-nda-lock.svg");
+}

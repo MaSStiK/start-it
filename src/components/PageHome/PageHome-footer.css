@@ -1,0 +1,71 @@
+/* Нижня сексция */
+.home-footer {
+    width: 100%;
+    padding-bottom: 80px;
+    background: rgb(133, 132, 132);
+
+    margin-top: 160px;
+}
+
+.home-footer__wrapper {
+    width: 1140px;
+    height: 350px;
+
+    justify-content: space-between;
+
+    padding-top: 80px;
+    border-bottom: 1px solid var(--border-white);
+
+    margin: 0 auto;
+}
+
+/* Email */
+.home-footer__links h1 {
+    color: var(--text-white);
+    font-size: 48px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    margin-top: 25px;
+}
+
+
+/* Большая синяя кнопка "Заполнить бриф" */
+.home-footer__brief-wrapper {
+    width: 251px;
+    height: 251px;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background-color: var(--bg-blue);
+
+    cursor: pointer;
+}
+
+.home-footer__brief-wrapper a {
+    color: var(--text-white);
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.7px;
+    text-decoration: none;
+}
+
+
+/* Список кнопок с соц-сетями */
+.home-footer__links {
+    gap: 80px;
+}
+
+.home-footer__links button {
+    width: 62px;
+    height: 62px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background-color: rgb(243, 243, 243);
+}

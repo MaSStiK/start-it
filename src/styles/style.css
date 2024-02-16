@@ -1,47 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
 @import "./text.css";
-@import "./link.css";
 @import "./button.css";
 
 
 :root {
     /* Основные цвета */
-    --bg-primary: #1B1A1F;
-    --bg-secondary: #242328;
-    --bg-transparent: #15151586;
+    --bg-white: rgb(255, 255, 255);
+    --bg-grey: rgb(243, 243, 243);
+
+    --bg-blue: rgb(55, 187, 255);
 
     /* Бордеры */
-    --border-primary: 1px solid #413F46;
-    --border-primary-color: #413F46;
-    --border-input: 1px solid #9891a0;
-    --border-input-focus: 1px solid  #1CA02C;
-    --border-input-error: 1px solid  #D60027;
-    --border-radius: 4px;
-
-    /* Отступы между блоками и внутри блоков */
-    --article-gap: 20px;
-    --block-gap: 12px;
+    --border-white: rgb(255, 255, 255);
+    --border-black: rgb(0, 0, 0);
 
     /* Уровни слоев */
     --z-under: -1; /* Под основным контентом */
     --z-main: 0; /* Основной контент */
     --z-over: 1; /* Над основным контентом */
-    --z-nav-bg: 8; /* Подложка навигации (Черный фон) */
-    --z-nav-content: 9; /* Верх навигации */
-    --z-nav: 10; /* Меню навигации */
-    --z-modal: 11; /* Модальное окно (над навигацией) */
-    --z-loading: 12; /* Загрузка над модальным окном */
-    --z-top: 13; /* Над всем */
 }
 
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 
-    font-family: "Montserrat", sans-serif;
-    color: var(--text-white);
+    font-family: "Inter", sans-serif;
+    color: var(--text-black);
     font-size: var(--p-size);
     font-weight: 400;
     word-break: break-word;
@@ -50,26 +36,26 @@
 
     list-style-type: none;
     scroll-behavior: smooth;
-    color-scheme: dark;
+    color-scheme: light;
 
-    transition: .2s all;
+    transition: .15s all;
 }
 
 
 /* Скролл */
-*::-webkit-scrollbar {
+/* *::-webkit-scrollbar {
     width: 4px;
     height: 4px;
-}
+} */
 
 /* Подложка скролла в цвет фона */
-*::-webkit-scrollbar-track {
+/* *::-webkit-scrollbar-track {
     border-radius: var(--border-radius);
     background-color: #00000000;
-}
+} */
 
 /* Скрол цвета основного блока */
-*::-webkit-scrollbar-thumb {
+/* *::-webkit-scrollbar-thumb {
     border-radius: var(--border-radius);
     background-color: var(--border-primary-color);
-}
+} */

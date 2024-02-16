@@ -1,49 +1,48 @@
 :root {
     /* Размеры текста */
-    --h1-size: 28px;
-    --h2-size: 24px;
-    --h3-size: 20px;
-    --h4-size: 16px;
+    --h1-size: 60px;
+    --h2-size: 32px;
+    --h3-size: 24px;
+    --h4-size: 20px;
     --p-size: 16px;
     --p-small-size: 12px;
 
     /* Цвет текста */
-    --text-white: rgba(255,255,255, 1);
-    --text-gray: rgba(255,255,255, 0.5); /* 50% прозрачность */
-    --text-dark: rgba(255,255,255, 0.3); /* 30% прозрачность */
-    --text-red: #D60027;
-    --text-link: #6D5FE4;
+    --text-black: rgba(0, 0, 0);
+    --text-white: rgb(255, 255, 255);
+    --text-gray: rgb(133, 132, 132);
+    /* --text-link: #6D5FE4; */
 }
 
 @media screen and (max-width: 840px) {
-    :root {
+    /* :root {
         --h1-size: 26px;
         --h2-size: 22px;
         --h3-size: 18px;
         --h4-size: 14px;
         --p-size: 14px;
-    }
+    } */
 }
 
 /* Стили для текста */
 h1, .h1 {
     font-size: var(--h1-size);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 h2, .h2 {
     font-size: var(--h2-size);
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h3, .h3 {
     font-size: var(--h3-size);
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h4, .h4 {
     font-size: var(--h4-size);
-    font-weight: 600;
+    font-weight: 400;
 }
 
 p {
@@ -58,6 +57,13 @@ small, .small {
 /* Лейбл инпута */
 label {
     font-size: var(--p-size);
+}
+
+/* Ссылка (Указывается для тега <a> (Link) если в нем только текст) */
+a {
+    font-size: var(--p-size);
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 

@@ -1,0 +1,88 @@
+/* Секция с информацией */
+.home-info {
+    padding: 80px 94px;
+
+    margin-top: 80px;
+}
+
+.home-info h2 {
+    line-height: 39px;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+}
+
+.home-info h2 span {
+    color: var(--text-gray);
+    line-height: inherit;
+    letter-spacing: inherit;
+}
+
+.home-info h2:nth-child(1) {
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-black);
+
+    margin-top: 7px;
+}
+
+.home-info h2:nth-child(2) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-black);
+}
+
+.home-info h2:nth-child(3) {
+    width: 640px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-black);
+}
+
+
+.home-info__wrapper {
+    gap: 60px;
+    margin-top: 77px;
+}
+
+.home-info__container {
+    width: 339px;
+    padding: 20px;
+
+    border-radius: 8px;
+}
+
+/* Серый */
+.home-info__container:nth-child(1) {
+    background-color: rgb(217, 217, 217);
+}
+
+/* Синий */
+.home-info__container:nth-child(2) {
+    background-color: rgba(55, 187, 255, 0.6);
+}
+
+/* Оранжевый */
+.home-info__container:nth-child(3) {
+    background-color: rgb(255, 183, 97);
+}
+
+
+.home-info__container h4 {
+    line-height: 24px;
+    letter-spacing: 1.9px;
+
+    margin-bottom: 4px;
+}
+
+.home-info__container small {
+    display: inline-block;
+    width: auto;
+    padding: 8px;
+
+    line-height: 15px;
+    letter-spacing: 0.5px;
+
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+
+    margin-top: 15px;
+}

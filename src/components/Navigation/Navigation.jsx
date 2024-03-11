@@ -53,7 +53,7 @@ export default function Navigation() {
             {Context.bodyNoScroll &&
                 <div className="nav-menu">
                     <div className="nav-menu__content">
-                        <Link to={"/"} className="nav-menu__logo-wrapper">
+                        <Link to={"/"} className="nav-menu__logo-wrapper" onClick={handleNavButton}>
                             <img src={imgLogo} alt="logo" />
                         </Link>
 

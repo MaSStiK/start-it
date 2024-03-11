@@ -2,11 +2,11 @@
 // import { Outlet, useNavigate } from "react-router-dom"
 // import { DataContext } from "../Context"
 
-import "./BaseLoyout.css"
-import "./BaseLoyout-phone.css"
+import "./BaseLayout.css"
+import "./BaseLayout-phone.css"
 
 
-export default function BaseLoyout() {
+export default function BaseLayout() {
     // const Context = useContext(DataContext)
 
     return (

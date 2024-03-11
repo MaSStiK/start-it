@@ -1,0 +1,83 @@
+/* Заголовок секции видно только на телефоне */
+.home-brief__title {
+    display: none;
+    font-weight: 500;
+}
+
+/* Уменьшение навигации, переход на мобильную версию */
+@media screen and (max-width: 978px) {
+    .home-brief {
+        height: auto;
+    }
+    
+    .home-brief__wrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+        margin-top: 40px;
+    }
+
+    /* Отображаем заголовок */
+    .home-brief__title {
+        display: block;
+    }
+
+    /* Полоску отключаем */
+    .home-brief svg {
+        display: none;
+    }
+
+    /* Логотип */
+    .home-brief__wrapper img {
+        width: 260px;
+        height: 260px;
+        position: static;
+    }
+
+    .home-brief__stage {
+        width: clamp(322px, 70%, 65%) !important;
+        gap: 48px !important;
+        position: static !important;
+    }
+
+    .home-brief__stage h4 {
+        width: calc(100% - 48px - 54px);
+    }
+
+    .home-brief__stage-circle::after {
+        /* Ставим вместо круга цифру */
+        content: attr(data-number);
+        width: auto;
+        height: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        /* Отключаем круг */
+        background-color: transparent;
+
+        font-size: 20px;
+        letter-spacing: 0.08em;
+    }
+}
+
+/* Компактная телефонная версия */
+@media screen and (max-width: 374px) {
+    /* Логотип */
+    .home-brief__wrapper img {
+        width: 100%;
+    }
+
+    .home-brief__stage {
+        width: 100% !important;
+        gap: 20px !important;
+    }
+
+    .home-brief__stage h4 {
+        width: calc(100% - 20px - 54px);
+    }
+}

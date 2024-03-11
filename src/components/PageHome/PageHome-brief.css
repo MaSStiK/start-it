@@ -1,13 +1,15 @@
-/* Секция с информацией */
+/* Секция с анимированным кругом */
 .home-brief {
-    width: min(1328px, 100%);
+    width: min(1380px, 100%); /* 1328px + 26px + 26px */
     height: 781px;
-    margin-top: 80px;
+    padding: 0 26px; /* Отступ от краев экрана */
+
+    margin-top: clamp(80px, 12vw, 160px);
 }
 
 .home-brief__wrapper {
-    width: 610px;
-    height: 610px;
+    width: 620px;
+    height: 620px;
     position: relative;
 
     margin-top: 80px;
@@ -25,38 +27,38 @@
 
 
 /* Этапы */
-.home-breif__stage {
+.home-brief__stage {
     gap: 28px;
     align-items: center;
     position: absolute;
 }
 
-.home-breif__stage:nth-of-type(1) {
+.home-brief__stage:nth-of-type(1) {
     width: 320px;
     top: -8px;
     left: 384px;
 }
 
-.home-breif__stage:nth-of-type(2) {
+.home-brief__stage:nth-of-type(2) {
     width: 200px;
     top: 184px;
     left: 574px;
 }
 
-.home-breif__stage:nth-of-type(3) {
+.home-brief__stage:nth-of-type(3) {
     width: 450px;
     top: 376px;
     left: 574px;
 }
 
-.home-breif__stage:nth-of-type(4) {
+.home-brief__stage:nth-of-type(4) {
     width: 560px;
     gap: 36px;
     top: 566px;
     left: 384px;
 }
 
-.home-breif__stage-circle {
+.home-brief__stage-circle {
     width: 54px;
     height: 54px;
     position: relative;
@@ -66,20 +68,19 @@
     background-color: rgb(217, 217, 217);
 }
 
-.home-breif__stage-circle::after {
+.home-brief__stage-circle::after {
     content: "";
     width: 19px;
     height: 19px;
     border-radius: 50%;
-    background-color: black;
+    background-color: var(--border-black);
     position: absolute;
     top: 16px;
     left: 16px;
 }
 
-.home-breif__stage h4 {
-    line-height: 24px;
-    letter-spacing: 1.6px;
+.home-brief__stage h4 {
+    letter-spacing: 0.08em;
 }
 
 

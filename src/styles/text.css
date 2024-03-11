@@ -1,101 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
 :root {
     /* Размеры текста */
-    --h1-size: 60px;
-    --h2-size: 32px;
-    --h3-size: 24px;
-    --h4-size: 20px;
-    --p-size: 16px;
-    --p-small-size: 12px;
+    --h1: 60px;
+    --h2: 32px;
+    --h3: 24px;
+    --h4: 20px;
+    --p: 16px;
+    --p-small: 12px;
 
     /* Цвет текста */
-    --text-black: rgba(0, 0, 0);
     --text-white: rgb(255, 255, 255);
+    --text-black: rgba(0, 0, 0);
     --text-gray: rgb(133, 132, 132);
-    /* --text-link: #6D5FE4; */
+    --text-placeholder: rgb(217, 217, 217);
+    --text-blue: #37bbff;
 }
 
-@media screen and (max-width: 840px) {
-    /* :root {
-        --h1-size: 26px;
-        --h2-size: 22px;
-        --h3-size: 18px;
-        --h4-size: 14px;
-        --p-size: 14px;
-    } */
+* {
+    font-family: "Inter", sans-serif;
+    color: var(--text-black);
+    font-size: var(--p);
+    font-weight: 400;
+    word-break: break-word;
+    text-decoration: none;
 }
 
 /* Стили для текста */
 h1, .h1 {
-    font-size: var(--h1-size);
+    font-size: var(--h1);
     font-weight: 500;
 }
 
 h2, .h2 {
-    font-size: var(--h2-size);
+    font-size: var(--h2);
     font-weight: 400;
 }
 
 h3, .h3 {
-    font-size: var(--h3-size);
+    font-size: var(--h3);
     font-weight: 400;
 }
 
 h4, .h4 {
-    font-size: var(--h4-size);
+    font-size: var(--h4);
     font-weight: 400;
 }
 
 p {
-    font-size: var(--p-size);
+    font-size: var(--p);
     font-weight: 400;
 }
 
 small, .small {
-    font-size: var(--p-small-size);
-}
-
-/* Лейбл инпута */
-label {
-    font-size: var(--p-size);
+    font-size: var(--p-small);
 }
 
 /* Ссылка (Указывается для тега <a> (Link) если в нем только текст) */
 a {
-    font-size: var(--p-size);
-    text-decoration: underline;
     cursor: pointer;
-}
-
-
-/* Стили для цвета текста */
-.text-white {
-    color: var(--text-white);
-}
-
-.text-gray {
-    color: var(--text-gray);
-}
-
-.text-dark {
-    color: var(--text-dark);
-}
-
-.text-red {
-    color: var(--text-red);
-}
-
-
-/* Переносящийся текст */
-.text-break {
-    word-break: break-word;
-    white-space: pre-wrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-/* Обрезающийся текст */
-.text-cut {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }

@@ -1,0 +1,61 @@
+/* Кнопка мобильного меню */
+.nav__menu-button-open {
+    display: none;
+    height: 100%;
+    padding: 4px;
+
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    right: 32px;
+
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+/* Наведение на пк */
+@media (hover: hover) {
+    .nav__menu-button-open:hover,
+    .nav__menu-button-open:focus {
+        border: 2px solid var(--border-black);
+    }
+}
+
+/* Клик на телефоне */
+@media (hover: none) {
+    .nav__menu-button-open:active {
+        border: 2px solid var(--border-black);
+    }
+}
+
+
+/* Уменьшение навигации, переход на мобильную версию */
+@media screen and (max-width: 978px) {
+    /* Логотип по центру */
+    nav {
+        justify-content: center;
+    }
+
+    /* Скрываем контейнер с кнопками */
+    nav ul {
+        display: none !important;
+    }
+    
+    /* Отображаем кнопку навигации */
+    .nav__menu-button-open {
+        display: flex;
+    }
+}
+
+/* Компактная телефонная версия */
+@media screen and (max-width: 374px) {
+    nav {
+        justify-content: flex-start;
+    }
+
+    .nav__menu-button-open {
+        right: 0px;
+    }
+}

@@ -1,0 +1,7 @@
+/* Уменьшение навигации, переход на мобильную версию */
+@media screen and (max-width: 978px) {
+    .home-services th {
+        width: 40%;
+        vertical-align: top;
+    }
+}

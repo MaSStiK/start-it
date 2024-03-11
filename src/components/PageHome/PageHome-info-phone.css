@@ -1,0 +1,33 @@
+/* Перенос строки только на мобильной версии */
+.home-info__title h2 br {
+    display: none;
+}
+
+/* Уменьшение навигации, переход на мобильную версию */
+@media screen and (max-width: 978px) {
+    .home-info__content {
+        padding: 40px 18px;
+    }
+
+    .home-info__title h2 {
+        width: 100% !important;
+    }
+
+    .home-info__title h2 br {
+        display: block;
+    }
+}
+
+/* Контейнеры с информацией в колонну */
+@media screen and (max-width: 790px) {
+    .home-info__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-info__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}

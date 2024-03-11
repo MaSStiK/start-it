@@ -7,17 +7,21 @@ body {
     background-color: var(--bg-white);
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 
 /* Главный контейнер страницы */
 article {
     width: 100%;
-    height: 100%; /* Высота во всю страницу */
+    /* height: 100%; */
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    overflow-y: auto; /* Скроллбар обычный */
+    overflow-y: auto; /* Scroll обычный */
     overflow-x: hidden;
     /* -ms-overflow-style: -ms-autohiding-scrollbar; */
 
@@ -27,21 +31,18 @@ article {
 /* CSS for other than iOS devices */ 
 @supports not (-webkit-touch-callout: none) {
     article {
-        overflow-y: overlay; /* Скроллбар поверх */
+        overflow-y: overlay; /* Scroll поверх */
     }
 }
 
-/* Обыяная секция */
 section {
-    width: min(1140px, 100%);
-    position: relative;
+    width: min(1344px, 100%); /* 1328px + 8px + 8px */
 
     margin: 0 auto;
 }
 
-/* Сексцтя с серым фоном */
+/* Секция с серым фоном */
 .section-grey {
-    width: min(1328px, 100%);
     background-color: var(--bg-grey);
     border-radius: 40px;
 }

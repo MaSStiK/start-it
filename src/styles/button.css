@@ -2,10 +2,10 @@ button {
     color: var(--text-black);
     font-size: 20px;
     font-weight: 400;
-    text-decoration: none;
 
     outline: none;
     border: none;
+    background-color: transparent;
 
     overflow: hidden;
     user-select: none;
@@ -16,23 +16,4 @@ button {
 /* Отключена */
 button:disabled {
     cursor: not-allowed;
-}
-
-
-/* Кнопки в навигации */
-.nav-button {
-    height: 47px;
-    padding: 0 28px;
-
-    border: 1px solid #00000000;
-    border-radius: 24px;
-    background-color: #00000000;
-}
-
-
-/* Только для десктопных устройств */
-@media (hover: hover) {
-    .nav-button:hover, .nav-button:active {
-        border: 1px solid var(--border-black);
-    }
 }

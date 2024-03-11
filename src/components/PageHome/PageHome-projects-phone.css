@@ -1,0 +1,54 @@
+/* Года в таблице в мобильной версии */
+.td-phone {
+    display: none;
+
+    margin-top: 20px;
+}
+
+/* Уменьшение навигации, переход на мобильную версию */
+@media screen and (max-width: 978px) {
+    /* Отступ от первой строчки когда слово переносится на вторую строку */
+    .home-projects h2 span {
+        margin-top: 4px;
+    }
+
+    .home-projects h2 span::before {
+        padding: 5px 6px;
+    }
+
+    /* Таблица */
+    .home-projects table {
+
+        margin-top: 40px;
+    }
+
+    .td-phone {
+        display: block;
+    }
+
+    .home-projects thead th:first-of-type,
+    .home-projects tbody th {
+        display: none;
+    }
+
+    .home-projects thead th {
+        padding: 0 0 8px 0;
+        font-size: 20px;
+    }
+
+    .home-projects td {
+        vertical-align: top;
+
+        padding: 12px 0;
+    }
+
+    /* Иконка напротив заголовка "НДА" */
+    #home-projects__container-nda-icon::after {
+        content: "";
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        top: 0;
+        left: min(130px, calc(100% - 30px));
+    }
+}

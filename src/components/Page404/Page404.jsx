@@ -8,11 +8,9 @@ export default function Page404() {
     return (
         <>
             <article className="page-404 flex-col">
-                <h2>Ошибка 404</h2>
-                <h3>Страница не найдена</h3>
-                <Link to={"/"}>
-                    <button id="page-404__button-home">На главную</button>
-                </Link>
+                <h1>Страница не найдена</h1>
+                <h4>Ошибка 404</h4>
+                <Link to={"/"} id="page-404-button">На главную</Link>
             </article>
         </>
     )

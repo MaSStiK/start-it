@@ -1,0 +1,23 @@
+/* Сжатие формы */
+@media screen and (max-width: 1206px) {
+    .brief-form form {
+        flex-direction: column;
+    }
+
+    .brief-form form input {
+        width: 100%;
+    }
+
+    .brief-form__button-wrapper {
+        margin-top: 20px;
+    }
+}
+
+/* Уменьшение навигации, переход на мобильную версию */
+@media screen and (max-width: 978px) {
+    /* Кнопка в контейнерах */
+    .button-brief {
+        padding: 20px 70px; /* Чуть меньше ширина */
+        font-size: 16px;
+    }
+}

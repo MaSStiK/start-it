@@ -1,43 +1,31 @@
 /* Самая первая секция */
 .home-header {
-    padding: 80px 94px;
+    padding: 0 8px; /* Внешний отступ от краев экрана */
+}
 
+.home-header__content {
+    width: 100%;
+    padding: 80px 18px; /* Внутренний отступ от краев блока */
     align-items: center;
 }
 
 
 /* Навигация */
 .home-header nav {
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Обвертка логотипа */
-.home-header__logo-wrapper {
-    width: 117px;
-    height: 38px;
-
-    cursor: pointer;
-}
-
-/* Контейнер с кнопками */
-.home-header nav ul {
-    width: 934px;
-    justify-content: space-between;
+    width: min(1140px, 100%);
 }
 
 
 /* Заголовки */
 .home-header__title {
-    width: 100%;
+    width: min(1140px, 100%);
 
-    margin-top: 100px;
+    margin-top: clamp(20px, 8vw, 100px);
 }
 
 .home-header__title h1 {
-    line-height: 73px;
-    letter-spacing: 4.8px;
+    font-size: clamp(40px, 4.5vw, var(--h1));
+    letter-spacing: 0.08em;
 }
 
 .home-header__title > h1 {
@@ -45,36 +33,41 @@
 }
 
 /* Вторая строка заголовка */
-.home-header__title-sub {
+.home-header__title > div {
     justify-content: space-between;
     align-items: center;
 
-    margin-top: 23px;
+    margin-top: 2%; /* Отступ 23px */
 }
 
-.home-header__title-sub h1 {
-    text-align: end;
-
+.home-header__title > div h1 {
+    margin-left: 32px;
     margin-right: 27px;
 }
 
-.home-header__title-sub span {
+/* Синий фон */
+.home-header__title span {
+    display: inline-block;
     position: relative;
-
-    line-height: inherit;
+    
+    font-size: inherit;
+    font-weight: inherit;
     letter-spacing: inherit;
 
     z-index: var(--z-main);
 }
 
-.home-header__title-sub span::before {
+.home-header__title span::before {
     content: "";
-    width: 313px;
-    height: 73px;
+    width: 100%;
+    height: 100%;
+
+    padding: 0 clamp(4px, 8%, 20px); /* Шире на 20px с обеих сторон */
 
     position: absolute;
-    top: 0;
-    left: -20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: var(--z-under);
 
     border-radius: 40px;
@@ -83,12 +76,11 @@
 
 /* Стрелочка */
 .home-header__title-arrow {
-    width: calc(100% - 32px - 682px - 27px);
     height: 2px;
-
     position: relative;
-
-    background-color: black;
+    flex-grow: 1;
+    
+    background-color: var(--border-black);
 }
 
 .home-header__title-arrow::after {
@@ -110,70 +102,94 @@
 
 /* Подзаголовок */
 .home-header__sub-title-wrapper {
-    width: 100%;
+    width: min(1140px, 100%);
     justify-content: flex-end;
 
-    margin-top: 120px;
+    margin-top: clamp(40px, 10vw, 120px);
 }
 
 .home-header__sub-title {
-    width: 900px;
+    width: clamp(290px, 75vw, 920px);
 }
 
 .home-header__sub-title h2 {
     padding: 8px 0;
 
-    line-height: 39px;
-    letter-spacing: 2.5px;
+    font-size: clamp(16px, 2.5vw, var(--h2));
+    letter-spacing: 0.08em;
     text-transform: uppercase;
 
     border-top: 1px solid var(--border-black);
     border-bottom: 1px solid var(--border-black);
 }
 
-/* Вторая строка короче и без верхнего бордера */
+/* Вторая строка короче и без верхнего border */
 .home-header__sub-title h2:last-of-type {
-    width: 277px;
+    width: clamp(150px, 25vw, 277px);
     border-top: none;
 }
 
 .home-header__sub-title h2 span {
     color: var(--text-gray);
-    line-height: inherit;
+    font-size: inherit;
+    font-weight: inherit;
     letter-spacing: inherit;
 }
 
 
 /* Блок с контактами */
 .home-header__contacts {
-    width: 100%;
+    width: min(1140px, 100%);
+    flex-wrap: wrap;
     align-items: center;
     gap: 40px;
 
-    margin-top: 78px;
+    margin-top: clamp(40px, 10vw, 78px);
 }
+
 
 /* Кнопка "Контакты" */
-#home-header__contacts-button {
+#home-header__contacts-link {
+    width: clamp(320px, 32%, 360px);
     height: 64px;
+    /* padding: 0 120px; */
 
-    padding: 0 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     border-radius: 40px;
+    background-color: transparent;
+    border: 2px solid var(--border-black);
 
-    background-color: black;
-
-    color: var(--text-white);
-    line-height: 24px;
+    color: var(--text-black);
+    font-size: 20px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    letter-spacing: 1.4px;
 }
+
+/* Наведение на пк */
+@media (hover: hover) {
+    #home-header__contacts-link:hover,
+    #home-header__contacts-link:focus {
+        color: var(--text-white);
+        background-color: black;
+    }
+}
+
+/* Клик на телефоне */
+@media (hover: none) {
+    #home-header__contacts-link:active {
+        color: var(--text-white);
+        background-color: black;
+    }
+}
+
 
 /* Текст "Подробнее о нас" */
 #home-header__contacts-about-us {
     font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.02em;
 
-    text-decoration: none;
     border-bottom: 2px solid var(--border-black);
 }

@@ -1,0 +1,89 @@
+.home-header__title_phone,
+.home-header__sub-title-wrapper_phone {
+    display: none;
+
+}
+
+
+/* Уменьшение навигации, переход на мобильную версию */
+@media screen and (max-width: 978px) {
+    .home-header__content {
+        padding: 40px 18px;
+    }
+
+    /* Мобильный заголовок */
+    .home-header__title {
+        display: none;
+    }
+    
+    .home-header__title_phone {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .home-header__title > h1 {
+        text-align: left;
+    }
+
+    .home-header__title > div {
+        margin: 0;
+    }
+
+    .home-header__title > div h1 {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+    .home-header__title span::before {
+        padding: 0 4px;
+    }
+
+    /* Мобильный под-заголовок */
+    .home-header__sub-title-wrapper {
+        display: none;
+    }
+
+    .home-header__sub-title-wrapper_phone {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .home-header__sub-title {
+        width: 304px;
+    }
+
+    .home-header__sub-title h2 {
+        font-size: 16px;
+    }
+
+    .home-header__sub-title h2:last-of-type {
+        width: 100%;
+    }
+
+    /* Блок с контактами */
+    .home-header__contacts {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home-header__contacts {
+        flex-direction: column;
+    }
+
+    #home-header__contacts-link {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .home-header__title h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .home-header__title h1 {
+        font-size: 25px;
+    }
+}

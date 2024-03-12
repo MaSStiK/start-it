@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c4b3a403.css",
-    "main.js": "/static/js/main.5aab95fd.js",
+    "main.css": "/static/css/main.e551817d.css",
+    "main.js": "/static/js/main.391119a7.js",
     "static/media/logo-text.svg": "/static/media/logo-text.459193b33fa6403048a5e87889942220.svg",
     "static/media/behance-black.svg": "/static/media/behance-black.79881f389b1bf40b1128fdbc114347fd.svg",
     "static/media/logo-home-445.svg": "/static/media/logo-home-445.32737d3c8c5a21c9e513127f58875fa8.svg",
@@ -10,11 +10,11 @@
     "static/media/project-nda-lock.svg": "/static/media/project-nda-lock.93744f287e2ef3a3b397.svg",
     "static/media/telegram-black.svg": "/static/media/telegram-black.0236814ba792254686cf3045e01b9803.svg",
     "static/media/menu.svg": "/static/media/menu.9c147af56848b96407e56e354a8daca8.svg",
-    "main.c4b3a403.css.map": "/static/css/main.c4b3a403.css.map",
-    "main.5aab95fd.js.map": "/static/js/main.5aab95fd.js.map"
+    "main.e551817d.css.map": "/static/css/main.e551817d.css.map",
+    "main.391119a7.js.map": "/static/js/main.391119a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4b3a403.css",
-    "static/js/main.5aab95fd.js"
+    "static/css/main.e551817d.css",
+    "static/js/main.391119a7.js"
   ]
 }
